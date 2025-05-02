@@ -1,0 +1,76 @@
+.home-container {
+    min-height: 80vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1100px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 43, 91, 0.1);
+    flex-wrap: wrap;
+    border-radius: 12px;
+  }
+  .home-text {
+    flex: 2 1 500px;
+  }
+  .home-text h2 {
+    font-size: 1.8rem;
+    color: #1A73E8;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .home-text p {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .home-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: 3 / 1; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+/* Responsivitet för mindre skärmar */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    padding: 1.5rem;
+
+  }
+  .home-text {
+    flex: 1 1 auto;
+    text-align: center;
+
+  }
+
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+  .home-text p {
+    font-size: 1rem;
+  }
+  .home-image img {
+    aspect-ratio: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+}

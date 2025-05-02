@@ -1,0 +1,122 @@
+<div class="about-container">
+    <h2>Om Projektet</h2>
+  
+    <p class="start_info">
+      Denna webbplats är skapad i Angular och det är en skoluppgift som ingur i kursen <br> "DT208G Datateknik GR (B), Programmering i TypeScript". <br> <br>  Här beskriver jag hur jag gått tillväga steg för steg.
+    </p>
+  
+    <div class="list_div">
+      <div class="step">
+        <h4>1. Start av projekt</h4>
+        <p>Jag startade ett nytt Angular-projekt med <code>ng new (projektetNamn)</code> i terminalen.</p>
+      </div>
+  
+      <div class="step">
+        <h4>2. Skapade undersidor</h4>
+        <p>Jag skapade tre sidor: Startsida, Konverteringssida och Om-sidan. (denna sidan som vi är nu på)</p>
+      </div>
+  
+      <div class="step">
+        <h4>3. Routing</h4>
+        <p>Jag lade till Angular Router för att navigera mellan sidorna via URL.</p>
+      </div>
+  
+      <div class="step">
+        <h4>4. Menykomponent</h4>
+        <p>Jag skapade en egen menykomponent med routerLink för att navigera mellan olika sidor.</p>
+      </div>
+  
+      <div class="step">
+        <h4>5. Grunddesign</h4>
+        <p>Rubrik placerades till vänster, och länkarna till höger med ett färgtema: mörkblå, ljusblå och gul.</p>
+      </div>
+  
+      <div class="step">
+        <h4>6. Responsiv meny</h4>
+        <p>Jag skapade en menyn som passar för mobil via media query, då klickar man på en knapp och visas menyn som en dropdown.</p>
+      </div> 
+    </div>
+  </div>
+
+  <!--info om skapande av startsida -->
+    <div class="about-container">
+  <h2>Skapande av Startsidan</h2>
+
+  <p class="start_info">
+    I startsidan finns det information om webbutvecckling programmet samt en bild.
+    <br> Det bifogas en komponent som innehåller information om mitt_universitet och länk till Mittuniversitetet. 
+  </p>
+
+  <div class="list_div">
+    <div class="step">
+      <h4>1. Text och Bild</h4>
+      <p>Jag lade till en inspirerande text om webbutveckling och en bild som kompletterar texten för att ge sidan ett visuellt intryck. Bilden är placerad i en rektangulär sektion till vänster eller höger om texten.</p>
+    </div>
+
+    <div class="step">
+      <h4>2. Sektion om Mittuniversitetet</h4>
+      <p>jag skapade en egen komponent som innehåller information om Mittuniversitetet och infogade detta i startsidan.</p>
+      <p>komponenten beskriver att Mittuniversitetet är det bästa valet för att studera webbutveckling. Jag lade också till en länk till programmet på universitetets hemsida som öppnar universitetets sida för mer information..</p>
+    </div>
+
+    <div class="step">
+      <h4>3. Layout och Design</h4>
+      <p>Jag valde en ren, professionell layout med en ljusgrå eller benvit bakgrund. Texten om Mittuniversitetet placerades i en rektangulär ruta med ljusblå bakgrund och en mörkblå kant för att framträda tydligt.</p>
+    </div>
+
+    <div class="step">
+      <h4>4. Problem med e-postadressen</h4>
+      <p>Jag stötte på ett problem när jag försökte visa e-postadressen <code>kontakt&#64;miun.se</code> i footern. Angular tolkade "&#64;" som en början på ett block och orsakade ett fel. Lösningen var att använda HTML-entiteten <code>&#64;</code> för att visa e-postadressen korrekt.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<!--info om converter sida -->
+
+<div class="about-container">
+  <h2>Skapande av Konverteringssidan</h2>
+
+  <p class="start_info">
+    I sidan konverter har jag skapat en funktion för att konverterare längd- och temperaturenheter med hjälp av Angular.
+  </p>
+
+  <div class="list_div">
+    <div class="step">
+      <h4>1. Komponentstruktur</h4>
+      <p>Jag skapade en fristående Angular-komponent för konverteringssidan och använde <code>standalone: true</code> för att kunna importera FormsModule och CommonModule direkt i komponenten.</p>
+    </div>
+
+    <div class="step">
+      <h4>2. Formulär och Interaktion</h4>
+      <p>Jag byggde ett formulär i HTML med ett dropdownfält för att välja typ av konvertering och ett inputfält för att skriva in värdet som ska konverteras. Båda elementen är kopplade med <code>ngModel</code>.</p>
+    </div>
+
+    <div class="step">
+      <h4>3. Konverteringslogik</h4>
+      <p>I komponentens TypeScript-fil skrev jag en <code>convert()</code>-funktion som utför olika omvandlingar beroende på användarens val i dropdown-menyn.</p>
+    </div>
+
+    <div class="step">
+      <h4>4. Resultatvisning</h4>
+      <p>Resultatet av konverteringen visas under inputfältet, men bara om ett resultat finns. Detta styrs med hjälp av <code>*ngIf</code> för att kontrollera när elementet ska visas.</p>
+    </div>
+
+    <div class="step">
+      <h4>5. CSS-design</h4>
+      <p>Jag skapade en design som passar själva sidan. Jag fokuserade på att ha mellanrum och anpassade typsnitt för tydlighet och läsbarhet.</p>
+    </div>
+
+    <div class="step">
+      <h4>6. Responsivitet</h4>
+      <p>För att sidan ska fungera bra på mindre skärmar lade jag till en media query som justerar padding, textstorlek och bredd vid skärmstorlekar som är under 600px.</p>
+    </div>
+
+    <div class="step">
+      <h4>7. Test och förbättring</h4>
+      <p>Jag testade alla konverteringstyper och säkerställde att rätt beräkningar görs och att resultatet visas direkt vid inmatning.</p>
+    </div>
+
+  </div>
+</div>

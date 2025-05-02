@@ -1,0 +1,18 @@
+<div class="about-container">
+    <h2>Enhetsomvandlare</h2>
+  
+    <label for="conversionType">Välj konvertering:</label>
+    <select id="conversionType" [(ngModel)]="conversionType"> <!-- värdet som väljs sparas i variabeln conversionType (tvåvägsdatabindning). -->
+      <option value="meTofe">Meter till Feet</option>
+      <option value="feTome">Feet till Meter</option>
+      <option value="ceTofa">Celsius till Fahrenheit</option>
+      <option value="faToce">Fahrenheit till Celsius</option>
+    </select>
+  
+    <label for="inputData">Ange värde:</label>
+    <input id="inputData" type="number" [(ngModel)]="inputData" (input)="convert()" /> <!-- värdet som väljs sparas i variabeln inputData -->
+                                                            <!--(input)="convert()" betyder att varje gång användaren skriver något, körs convert()-funktione   n automatiskt.-->
+    <p *ngIf="convertedData !== null">Konverterat värde: {{ convertedData }}</p> <!--*ngIf används för att visa reultat om det inte är null-->
+  
+  </div>
+  

@@ -1,0 +1,33 @@
+.site-footer {
+    background-color: #001f3f; /* dark blå */
+    font-size: 14px;
+    color: #f0f8ff; 
+    padding: 2rem;
+    text-align: center;
+    border-top: 4px solid #f9c80e; 
+
+  }
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .contact-info {
+    margin-top: 1rem;
+  }
+  .material-icons {
+    vertical-align: middle;
+    margin-right: 6px;
+    color: #66b2ff; 
+  }
+  
+  @media (max-width: 600px) {
+
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .contact-info {
+      margin-top: 1rem;
+      flex: unset;
+    }
+  }

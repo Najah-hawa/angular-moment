@@ -1,0 +1,14 @@
+<nav class="meny">
+    <div class="logo">
+      <h1>Angular</h1>
+    </div>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      ☰
+    </div>
+    <ul class="meny_links" [class.active]="menuOpen">
+      <li><a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">Start</a></li>
+      <li><a routerLink="/converter" routerLinkActive="active" (click)="closeMenu()">Konvertera</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">Om</a></li>
+    </ul>
+  </nav>
+  
